@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">PlantCare</string>
+    <string name="app_tagline">Ứng dụng Quản lý Cây Cảnh Thông Minh</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Tổng quan</string>
+    <string name="nav_plants">Vườn cây</string>
+    <string name="nav_ai_scan">AI Scan</string>
+    <string name="nav_statistics">Thống kê</string>
+    <string name="nav_profile">Hồ sơ</string>
+
+    <!-- Auth -->
+    <string name="login_title">Chào mừng trở lại</string>
+    <string name="login_subtitle">Đăng nhập để theo dõi khu vườn xanh của bạn</string>
+    <string name="email_hint">Địa chỉ Email</string>
+    <string name="password_hint">Mật khẩu</string>
+    <string name="name_hint">Họ và tên</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="btn_register">Đăng ký tài khoản</string>
+    <string name="no_account">Chưa có tài khoản? Đăng ký ngay</string>
+    <string name="has_account">Đã có tài khoản? Đăng nhập</string>
+    <string name="logout">Đăng xuất</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Xin chào, %1$s 🌱</string>
+    <string name="home_today_care">Chăm sóc hôm nay</string>
+    <string name="home_needs_water">Cần tưới nước</string>
+    <string name="home_needs_fertilizer">Cần bón phân</string>
+    <string name="home_all_cared">Tuyệt vời! Tất cả cây đã được chăm sóc đầy đủ hôm nay.</string>
+    <string name="home_my_garden">Cây của tôi (%1$d)</string>
+    <string name="home_quick_actions">Thao tác nhanh</string>
+    <string name="quick_add_plant">Thêm cây mới</string>
+    <string name="quick_ai_check">Chẩn đoán AI</string>
+
+    <!-- Plants -->
+    <string name="search_plants_hint">Tìm kiếm cây trong vườn...</string>
+    <string name="filter_all">Tất cả</string>
+    <string name="filter_needs_water">Cần tưới</string>
+    <string name="filter_needs_fertilizer">Cần bón phân</string>
+    <string name="no_plants_found">Chưa có cây nào trong danh mục</string>
+    <string name="add_plant">Thêm cây mới</string>
+    <string name="edit_plant">Chỉnh sửa cây</string>
+    <string name="delete_plant">Xóa cây</string>
+    <string name="delete_plant_confirm">Bạn có chắc chắn muốn xóa cây này và toàn bộ lịch sử?</string>
+    <string name="plant_name">Tên cây</string>
+    <string name="plant_type">Loại cây / Giống</string>
+    <string name="plant_planted_date">Ngày bắt đầu trồng</string>
+    <string name="plant_water_cycle">Chu kỳ tưới (ngày/lần)</string>
+    <string name="plant_fertilizer_cycle">Chu kỳ bón phân (ngày/lần)</string>
+    <string name="plant_fertilizer_type">Loại phân bón thường dùng</string>
+    <string name="plant_notes">Ghi chú chăm sóc</string>
+    <string name="select_photo">Chọn ảnh</string>
+    <string name="take_photo">Chụp ảnh</string>
+    <string name="btn_save">Lưu lại</string>
+    <string name="btn_cancel">Hủy bỏ</string>
+
+    <!-- Plant Detail -->
+    <string name="tab_overview">Thông tin</string>
+    <string name="tab_journal">Nhật ký phát triển</string>
+    <string name="tab_history">Lịch sử chăm sóc</string>
+    <string name="btn_water_now">Đã tưới nước</string>
+    <string name="btn_fertilize_now">Đã bón phân</string>
+    <string name="last_watered">Lần tưới gần nhất: %1$s</string>
+    <string name="next_watering">Lần tưới kế tiếp: %1$s</string>
+    <string name="last_fertilized">Lần bón gần nhất: %1$s</string>
+    <string name="next_fertilizer">Lần bón kế tiếp: %1$s</string>
+    <string name="water_due_today">Cần tưới hôm nay!</string>
+    <string name="fertilizer_due_today">Cần bón hôm nay!</string>
+    <string name="water_overdue">Đã trễ hạn tưới %1$d ngày</string>
+    <string name="fertilizer_overdue">Đã trễ bón phân %1$d ngày</string>
+    <string name="days_left">%1$d ngày nữa</string>
+    <string name="today">Hôm nay</string>
+
+    <!-- Journal -->
+    <string name="add_journal_entry">Thêm nhật ký phát triển</string>
+    <string name="journal_height">Chiều cao cây (cm)</string>
+    <string name="journal_note">Ghi chú tình trạng / lá mới</string>
+    <string name="journal_photo">Ảnh minh họa</string>
+    <string name="no_journal_yet">Chưa có bài nhật ký nào. Hãy ghi lại những cột mốc phát triển đầu tiên!</string>
+
+    <!-- AI Scan -->
+    <string name="ai_title">Trợ lý AI Thực vật</string>
+    <string name="ai_subtitle">Nhận diện cây cảnh &amp; chẩn đoán sức khỏe bằng Google Gemini</string>
+    <string name="mode_identify">Nhận diện loại cây</string>
+    <string name="mode_health_check">Kiểm tra bệnh cây</string>
+    <string name="ai_prompt_select_photo">Chụp ảnh lá/thân hoặc chọn ảnh từ máy để phân tích</string>
+    <string name="btn_analyze_ai">Phân tích với Gemini AI</string>
+    <string name="ai_analyzing">Đang phân tích hình ảnh với Gemini AI...</string>
+    <string name="ai_disclaimer">⚠️ Lưu ý: Kết quả phân tích từ AI mang tính chất tham khảo dựa trên hình ảnh thực tế, không thay thế hoàn toàn chẩn đoán của chuyên gia thực vật học.</string>
+    <string name="btn_add_as_new_plant">Tạo cây mới từ kết quả này</string>
+    <string name="btn_save_to_journal">Lưu vào nhật ký cây</string>
+    <string name="ai_light_req">Nhu cầu ánh sáng</string>
+    <string name="ai_water_req">Nhu cầu tưới nước</string>
+    <string name="ai_temp_req">Nhiệt độ thích hợp</string>
+    <string name="ai_treatment">Hướng dẫn điều trị &amp; chăm sóc</string>
+
+    <!-- Statistics -->
+    <string name="stats_title">Thống kê chăm sóc</string>
+    <string name="stats_total_waterings">Tổng lần tưới</string>
+    <string name="stats_total_fertilizers">Tổng lần bón</string>
+    <string name="stats_total_journals">Bài nhật ký</string>
+    <string name="stats_most_cared">Cây được chăm sóc nhiều nhất</string>
+    <string name="stats_chart_activity">Biểu đồ hoạt động chăm sóc (7 ngày qua)</string>
+    <string name="stats_chart_ratio">Tỷ lệ các hoạt động chăm sóc</string>
+
+    <!-- Profile & Sync -->
+    <string name="profile_title">Hồ sơ cá nhân</string>
+    <string name="sync_status_title">Trạng thái đồng bộ dữ liệu</string>
+    <string name="sync_offline_mode">Đang sử dụng dữ liệu Offline (Room Database)</string>
+    <string name="sync_online_mode">Đồng bộ Firebase Firestore sẵn sàng</string>
+    <string name="btn_sync_now">Đồng bộ ngay bây giờ</string>
+    <string name="sync_success">Đồng bộ dữ liệu Firebase thành công!</string>
+    <string name="sync_failed">Không thể kết nối Firebase, tiếp tục lưu trữ ngoại tuyến.</string>
+</resources>

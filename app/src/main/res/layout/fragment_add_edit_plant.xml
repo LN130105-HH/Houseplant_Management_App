@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Top Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnBackAddEdit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_chip"
+                    android:contentDescription="Quay lại"
+                    android:src="@drawable/ic_arrow_back"
+                    app:tint="@color/text_primary" />
+
+                <TextView
+                    android:id="@+id/tvAddEditTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/add_plant"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Plant Photo Box -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivPlantPhotoPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/surface_container_low"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_plant"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.PlantCare.LargeComponent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="12dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnPickImage"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/surface_white"
+                        android:text="@string/select_photo"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp"
+                        app:cornerRadius="@dimen/radius_pill"
+                        app:icon="@drawable/ic_image"
+                        app:iconTint="@color/primary" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Fields -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPlantName"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/plant_name"
+                app:boxCornerRadiusBottomEnd="@dimen/radius_lg"
+                app:boxCornerRadiusBottomStart="@dimen/radius_lg"
+                app:boxCornerRadiusTopEnd="@dimen/radius_lg"
+                app:boxCornerRadiusTopStart="@dimen/radius_lg">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPlantName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPlantType"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/plant_type"
+                app:boxCornerRadiusBottomEnd="@dimen/radius_lg"
+                app:boxCornerRadiusBottomStart="@dimen/radius_lg"
+                app:boxCornerRadiusTopEnd="@dimen/radius_lg"
+                app:boxCornerRadiusTopStart="@dimen/radius_lg">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPlantType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Watering Interval & Fertilizer Interval -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilWateringInterval"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:hint="@string/plant_water_cycle"
+                    app:boxCornerRadiusBottomEnd="@dimen/radius_lg"
+                    app:boxCornerRadiusBottomStart="@dimen/radius_lg"
+                    app:boxCornerRadiusTopEnd="@dimen/radius_lg"
+                    app:boxCornerRadiusTopStart="@dimen/radius_lg">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etWateringInterval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="3" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilFertilizerInterval"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:hint="@string/plant_fertilizer_cycle"
+                    app:boxCornerRadiusBottomEnd="@dimen/radius_lg"
+                    app:boxCornerRadiusBottomStart="@dimen/radius_lg"
+                    app:boxCornerRadiusTopEnd="@dimen/radius_lg"
+                    app:boxCornerRadiusTopStart="@dimen/radius_lg">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etFertilizerInterval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="30" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFertilizerType"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/plant_fertilizer_type"
+                app:boxCornerRadiusBottomEnd="@dimen/radius_lg"
+                app:boxCornerRadiusBottomStart="@dimen/radius_lg"
+                app:boxCornerRadiusTopEnd="@dimen/radius_lg"
+                app:boxCornerRadiusTopStart="@dimen/radius_lg">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFertilizerType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phân hữu cơ NPK" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNotes"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/plant_notes"
+                app:boxCornerRadiusBottomEnd="@dimen/radius_lg"
+                app:boxCornerRadiusBottomStart="@dimen/radius_lg"
+                app:boxCornerRadiusTopEnd="@dimen/radius_lg"
+                app:boxCornerRadiusTopStart="@dimen/radius_lg">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:lines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSavePlant"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/primary_container"
+                android:text="@string/btn_save"
+                android:textColor="@color/on_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/radius_pill" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

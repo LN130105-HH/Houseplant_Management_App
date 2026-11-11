@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_surface"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvCareDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận chăm sóc"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFertilizerTypeDialog"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Loại phân bón"
+        android:visibility="gone"
+        app:boxCornerRadiusBottomEnd="@dimen/radius_lg"
+        app:boxCornerRadiusBottomStart="@dimen/radius_lg"
+        app:boxCornerRadiusTopEnd="@dimen/radius_lg"
+        app:boxCornerRadiusTopStart="@dimen/radius_lg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFertilizerTypeDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phân hữu cơ NPK" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCareNote"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Ghi chú (tùy chọn)"
+        app:boxCornerRadiusBottomEnd="@dimen/radius_lg"
+        app:boxCornerRadiusBottomStart="@dimen/radius_lg"
+        app:boxCornerRadiusTopEnd="@dimen/radius_lg"
+        app:boxCornerRadiusTopStart="@dimen/radius_lg">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCareNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelCareDialog"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/text_secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmCare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/primary_container"
+            android:text="Xác nhận"
+            android:textColor="@color/on_primary"
+            app:cornerRadius="@dimen/radius_pill" />
+    </LinearLayout>
+
+</LinearLayout>
