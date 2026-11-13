@@ -51,4 +51,8 @@ public class AuthViewModel extends AndroidViewModel {
     public void logout() {
         authRepository.logout();
     }
+
+    public void sendPasswordResetEmail(String email, AuthRepository.OnResetCallback callback) {
+        authRepository.sendPasswordResetEmail(email, callback);
+    }
 }

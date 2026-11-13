@@ -53,13 +53,14 @@ dependencies {
     annotationProcessor("androidx.room:room-compiler:2.6.1")
 
     // Firebase BOM & Services
-    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    implementation(platform("com.google.firebase:firebase-bom:35.2.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-storage")
 
-    // WorkManager
+    // WorkManager & Guava
     implementation("androidx.work:work-runtime:2.9.1")
+    implementation("com.google.guava:guava:33.3.1-android")
 
     // CameraX
     implementation("androidx.camera:camera-core:1.4.1")

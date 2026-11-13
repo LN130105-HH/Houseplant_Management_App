@@ -19,6 +19,14 @@
     <string name="btn_register">Đăng ký tài khoản</string>
     <string name="no_account">Chưa có tài khoản? Đăng ký ngay</string>
     <string name="has_account">Đã có tài khoản? Đăng nhập</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="forgot_password_title">Quên mật khẩu</string>
+    <string name="forgot_password_subtitle">Nhập Gmail đã đăng ký. Chúng tôi sẽ gửi email hướng dẫn đặt lại mật khẩu.</string>
+    <string name="btn_reset_password">Lấy lại mật khẩu</string>
+    <string name="reset_password_success">Đã gửi email đặt lại mật khẩu. Vui lòng kiểm tra Gmail.</string>
+    <string name="reset_password_failed">Không thể gửi email đặt lại mật khẩu</string>
+    <string name="error_empty_email">Vui lòng nhập Gmail</string>
+    <string name="error_invalid_email">Gmail không hợp lệ</string>
     <string name="logout">Đăng xuất</string>
 
     <!-- Home -->

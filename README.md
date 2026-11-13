@@ -17,7 +17,7 @@ Thiết kế giao diện tuân thủ chặt chẽ tài liệu phong cách thực
 
 | STT | Chức năng | Công nghệ | Mô tả chi tiết |
 |:---:|:---|:---|:---|
-| **1** | **Đăng nhập / Đăng ký / Hồ sơ** | Firebase Auth + Firestore + Room | Đăng ký & đăng nhập bằng Email/Password, quản lý hồ sơ, hỗ trợ chế độ Offline nếu mất kết nối mạng. |
+| **1** | **Đăng nhập / Đăng ký / Quên mật khẩu / Hồ sơ** | Firebase Auth + Firestore + Room | Đăng ký & đăng nhập bằng Email/Password, khôi phục mật khẩu qua Firebase Email Reset, quản lý hồ sơ, hỗ trợ chế độ Offline nếu mất kết nối mạng. |
 | **2** | **Quản lý danh sách cây** | Room + RecyclerView + Glide | Thêm, sửa, xóa, tìm kiếm theo tên hoặc giống cây; lọc theo trạng thái: Cần tưới, Cần bón phân, Tất cả. |
 | **3** | **Nhắc tưới nước** | WorkManager + NotificationCompat | Đặt chu kỳ tưới (ngày/lần), tự động tính ngày tưới tiếp theo, gửi thông báo kèm nút "Đã tưới xong" ngay trên Notification. |
 | **4** | **Nhắc bón phân** | WorkManager + NotificationCompat | Đặt chu kỳ bón phân và loại phân bón (NPK, phân trùn quế,...), cảnh báo khi đến hạn hoặc quá hạn. |

@@ -52,6 +52,16 @@
             android:exported="false"
             android:theme="@style/Theme.PlantCare.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.auth.ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PlantCare.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PlantCare.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
 
         <!-- Main Screen -->
         <activity

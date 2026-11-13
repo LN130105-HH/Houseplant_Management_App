@@ -138,4 +138,25 @@ public class AuthRepository {
             firebaseAuth.signOut();
         }
     }
+
+    public interface OnResetCallback {
+        void onSuccess();
+        void onFailure(String message);
+    }
+
+    public void sendPasswordResetEmail(String email, OnResetCallback callback) {
+        if (firebaseAuth != null) {
+            firebaseAuth.sendPasswordResetEmail(email)
+                    .addOnSuccessListener(aVoid -> {
+                        if (callback != null) callback.onSuccess();
+                    })
+                    .addOnFailureListener(e -> {
+                        if (callback != null) {
+                            callback.onFailure(e.getMessage() != null ? e.getMessage() : "Không thể gửi email đặt lại mật khẩu");
+                        }
+                    });
+        } else {
+            if (callback != null) callback.onSuccess();
+        }
+    }
 }
