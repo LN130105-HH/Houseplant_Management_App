@@ -76,8 +76,7 @@ PlantCare/
    - Android Studio sẽ tự động nhận diện file `settings.gradle.kts` và tiến hành tải dependencies (Room, Firebase, MPAndroidChart, Retrofit, CameraX, Glide).
 
 2. **Cấu hình Firebase (Tùy chọn):**
-   - Dự án đã bao gồm sẵn cấu hình mặc định trong `app/google-services.json`.
-   - Nếu muốn kết nối vào tài khoản Firebase riêng của bạn:
+   - Xóa file mặc định `app/google-services.json` (File này chưa có cấu hình), làm theo các bước ở dưới để lấy file cấu hình hoặc lấy file có sẵn của tôi.
      1. Truy cập [Firebase Console](https://console.firebase.google.com/).
      2. Tạo dự án với Package Name: `vn.edu.nlu.plantcare`.
      3. Tải file `google-services.json` và chép đè vào thư mục `app/google-services.json`.
@@ -87,12 +86,3 @@ PlantCare/
    - Trong ứng dụng, tại màn hình **Hồ sơ (Profile)** có sẵn ô nhập **Gemini API Key**.
    - Bạn chỉ cần lấy API key miễn phí tại [Google AI Studio](https://aistudio.google.com/) và dán vào, nhấn **Lưu API Key**.
    - *(Ứng dụng cũng có sẵn cơ chế Offline Fallback thông minh giúp việc demo không bao giờ bị gián đoạn ngay cả khi không có mạng hoặc hết quota).*
-
-4. **Kịch bản Demo bài tập lớn:**
-   1. Đăng ký tài khoản mới hoặc đăng nhập.
-   2. Xem Dashboard: ứng dụng đã tự động tạo sẵn 3 cây mẫu trực quan (Cây Lưỡi Hổ, Cây Kim Tiền, Cây Trầu Bà Lỗ).
-   3. Nhấn **Xong** hoặc **Tưới ngay** để xác nhận chăm sóc cây.
-   4. Vào chi tiết cây -> Nhấn **Thêm nhật ký phát triển** kèm chiều cao cây.
-   5. Chuyển sang tab **AI Scan** -> Thử nghiệm **Nhận diện loại cây** và **Kiểm tra bệnh cây**.
-   6. Xem tab **Thống kê** để quan sát biểu đồ cột 7 ngày và biểu đồ tròn tỷ lệ chăm sóc.
-   7. Vào tab **Hồ sơ** -> Bấm **Kiểm tra thông báo nhắc việc ngay (Demo)** để thấy Notification xuất hiện trên thanh thông báo hệ thống Android.
